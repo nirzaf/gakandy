@@ -7,10 +7,8 @@ $white: #fff;
 $black: #000000;
 $darken: #00043c;
 
-$primary: #1ba12d;
+$primary: #0d036e;
 $secondary: #8fd0d2;
-
-
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -27,9 +25,6 @@ $secondary: #8fd0d2;
     transition:         all $transition ease;
 }
 
-html {
-	// overflow-x: hidden;
-}
 body {
 	font-family: $font-primary;
 	background: $white;
@@ -66,8 +61,8 @@ h1, h2, h3, h4, h5,
 	z-index: 0;
 	width: 100%;
 	.bg-wrap{
-		background: #3a2e5e;
-		background: #413c69;
+		background: #0d036e;
+		background: #0d036e;
 		padding: 0;
 		position: relative;
 		z-index: 0;
@@ -80,7 +75,7 @@ h1, h2, h3, h4, h5,
 			height: 0;
 			border-style: solid;
 			border-width: 0 0 40px 40px;
-			border-color: transparent transparent #413c69 transparent;
+			border-color: transparent transparent #0d036e transparent;
 			z-index: -1;
 		}
 		&:before{
@@ -92,7 +87,7 @@ h1, h2, h3, h4, h5,
 			height: 0;
 			border-style: solid;
 			border-width: 40px 40px 0 0;
-			border-color: #413c69 transparent transparent transparent;
+			border-color: #0d036e transparent transparent transparent;
 			z-index: -1;
 		}
 		@include media-breakpoint-down(md){
@@ -159,7 +154,6 @@ h1, h2, h3, h4, h5,
 
 	.navbar-brand {
 		color: $black;
-		// text-transform: uppercase;
 		font-weight: 800;
 		font-size: 28px;
 		line-height: 1;
@@ -301,8 +295,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
-
 .searchform{
 	height:46px;
 	border: 1px solid rgba(0,0,0,.05);
@@ -347,8 +339,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
-
 .hero-wrap{
 	width: 100%;
 	height: 100%;
@@ -362,7 +352,6 @@ h1, h2, h3, h4, h5,
 	}
 	.overlay{
 		position: absolute;
-		// width: 50%;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -440,7 +429,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
 //OWL CAROUSEL
 .owl-carousel {
 	position: relative;
@@ -484,13 +472,13 @@ h1, h2, h3, h4, h5,
 	}
 	&.home-slider {
 		position: relative;
-		height: 700px;
+		height: 500px;
 		z-index: 0;
 		.slider-item {
 			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
-			height: 700px;
+			height: 500px;
 			position: relative;
 			z-index: 0;
 			overflow: hidden;
@@ -502,7 +490,6 @@ h1, h2, h3, h4, h5,
 				background: $black;
 				opacity: .2;
 				width: 100%;
-				// transform: skewX(20deg);
 				padding: 0;
 				z-index: 0;
 			}
@@ -618,7 +605,6 @@ h1, h2, h3, h4, h5,
 	touch-action: pan-y;
 }
 
-
 //OWL CAROUSEL
 .owl-carousel {
 	position: relative;
@@ -712,7 +698,6 @@ h1, h2, h3, h4, h5,
 	}
 } 
 
-
 .bg-light {
 	background: #f8f9fd!important;
 }
@@ -723,7 +708,6 @@ h1, h2, h3, h4, h5,
 .bg-primary{
 	background: $primary !important;
 }
-
 
 //BUTTON
 .btn {
@@ -780,7 +764,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
 .img-video{
 	background-position: center center;
 	@include media-breakpoint-down(sm){
@@ -795,17 +778,13 @@ h1, h2, h3, h4, h5,
 	-webkit-box-shadow: 0px 10px 30px -4px rgba(0,0,0,0.15);
 	-moz-box-shadow: 0px 10px 30px -4px rgba(0,0,0,0.15);
 	box-shadow: 0px 10px 30px -4px rgba(0,0,0,0.15);
-	@include media-breakpoint-up(md){
-		// margin-right: -35px;
-	}
-
+	@include media-breakpoint-up(md){}
 	@include border-radius(50%);
 	span{
 		font-size:20px;
 		color: $primary;
 	}
 }
-
 
 //SERVICES
 .services{
@@ -952,9 +931,6 @@ h1, h2, h3, h4, h5,
 	}
 }
 
-
-
-
 .form-control {
 	height: 52px!important;
 	background: $white!important;
@@ -983,10 +959,7 @@ textarea.form-control {
 	visibility: hidden;
 }
 
-
-
 //ABOUT SINGLE
-
 .about-author{
 	img{
 	}
@@ -996,10 +969,8 @@ textarea.form-control {
 		}
 	}
 	.bio{
-
 	}
 }
-
 
 .ftco-section {
 	padding: 7em 0;
@@ -1020,8 +991,6 @@ textarea.form-control {
 	padding-bottom: 0 !important;
 }
 
-
-//PRICING
 .block-7 {
 	border-radius: 4px;
 	margin-bottom: 30px;
@@ -1081,7 +1050,6 @@ textarea.form-control {
 	}
 	.btn-primary{
 		color: $white;
-		// border: transparent;
 		text-transform: uppercase;
 		font-style: 16px;
 		font-weight: 600;
@@ -1102,7 +1070,6 @@ textarea.form-control {
 		-moz-box-shadow: 0px 24px 48px -13px rgba(0,0,0,0.11);
 		box-shadow: 0px 24px 48px -13px rgba(0,0,0,0.11);
 	}
-
 }
 
 //FOOTER
@@ -1113,9 +1080,7 @@ textarea.form-control {
 	a{
 		color: $primary;
 	}
-	p{
-		// color: rgba(0,0,0,.3);
-	}
+	p{}
 	.footer-heading{
 		font-size: 18px;
 		margin-bottom: 30px;
@@ -1140,16 +1105,16 @@ textarea.form-control {
 			border-radius: 5px;
 			box-shadow: none;
 			border: none;
-			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			&::-webkit-input-placeholder { 
 			  color: rgba(255,255,255,.3) !important;
 			}
-			&::-moz-placeholder { /* Firefox 19+ */
+			&::-moz-placeholder { 
 			  color: rgba(255,255,255,.3) !important;
 			}
-			&:-ms-input-placeholder { /* IE 1255+ */
+			&:-ms-input-placeholder { 
 			  color: rgba(255,255,255,.3) !important;
 			}
-			&:-moz-placeholder { /* Firefox 18- */
+			&:-moz-placeholder { 
 			  color: rgba(255,255,255,.3) !important;
 			}
 			&:focus{
@@ -1183,7 +1148,6 @@ textarea.form-control {
 		}
 	}
 }
-
 
 .ftco-footer-social {
 	li {
@@ -1309,7 +1273,6 @@ textarea.form-control {
 		}
 	}
 }
-
 
 //TESTIMONY
 .testimony-section{
@@ -1438,7 +1401,6 @@ textarea.form-control {
 	}
 }
 
-
 //ACCORDION
 .ftco-faqs{
 	.img-faqs{
@@ -1510,7 +1472,6 @@ textarea.form-control {
 	  text-decoration: none;
 	}
 
-
 	[data-toggle="collapse"] .fa:before {  
 	  content: "\f078";
 	  font-family:"FontAwesome";
@@ -1535,9 +1496,7 @@ textarea.form-control {
 	}
 
 	.card-body{
-		// background: rgba(0,0,0,.02);
 		ol{
-			// padding: 0 0 0 20px;
 			li{
 				margin-bottom: 10px;
 				padding-left: 10px;
@@ -1549,10 +1508,6 @@ textarea.form-control {
 		}
 	}
 }
-
-
-
-// magnific pop up
 
 .image-popup {
 	cursor: -webkit-zoom-in;
@@ -1580,8 +1535,6 @@ textarea.form-control {
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
-
 
 //blocks 
 .block-20 {
@@ -1656,7 +1609,6 @@ textarea.form-control {
 	}
 }
 
-
 .block-23 {
 	ul {
 		padding: 0;
@@ -1714,7 +1666,6 @@ textarea.form-control {
 	}
 }
 
-
 //CONTACT FORM
 .wrapper{
 	width: 100%;
@@ -1724,13 +1675,13 @@ textarea.form-control {
 }
 
 .info-wrap{
-	color: rgba(255,255,255,.8);
+	color: rgba(255,255,255);
 	h3{
 		color: $white;
 	}
 	.dbox{
 		width: 100%;
-		color: rgba(255,255,255,.8);
+		color: rgba(255, 255, 255);
 		margin-bottom: 25px;
 		&:last-child(){
 			margin-bottom: 0;

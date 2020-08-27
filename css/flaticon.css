@@ -1,9 +1,3 @@
-	/*
-  	Flaticon icon font: Flaticon
-  	Creation date: 24/01/2020 06:52
-  	*/
-
-
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/flaticon/font/Flaticon.eot");
@@ -30,8 +24,6 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

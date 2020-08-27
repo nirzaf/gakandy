@@ -199,8 +199,8 @@
 		} , { offset: '95%' } );
 	};
 	contentWayPoint();
-
-
-
 })(jQuery);
 
+(function ($) {
+    "use strict";
+})(jQuery);
